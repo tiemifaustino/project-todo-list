@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Minha Lista de Tarefas</h1>
+        <p id="funcionamento"><em>Clique duas vezes em um item para marcá-lo como completo</em></p>
+    </header>
+    <div>
+        <div class="container-buttons">
+            <button id='apaga-tudo'>Limpar Lista</button>
+            <button id='remover-finalizados'>Limpar Completos</button>
+            <button id="salvar-tarefas">Salvar Tarefas</button>
+        </div>
+        <div class="container-input">
+            <input id="texto-tarefa" placeholder="Digite uma tarefa">
+            <button id="criar-tarefa">Adicionar</button>
+            <button id="remover-selecionado">X</button>
+            <button id="mover-cima">∆</button>
+            <button id="mover-baixo">∇</button>
+        </div>
+    </div>
+    <div>
+        <ol id="lista-tarefas"></ol>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

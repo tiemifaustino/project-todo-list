@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  color: #2A313C;
+}
+
+body {
+  background-color: #efd3d7;
+}
+
+.tasks {
+  background-color: transparent;
+}
+
+.tasks-gray {
+  background-color: rgb(128, 128, 128);
+}
+
+.completed {
+  text-decoration: line-through solid rgb(0, 0, 0);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+}
+
+#funcionamento {
+  margin: auto 40px;
+  font-size: 1.2rem;
+}
+
+h1 {
+  margin: auto 40px;
+  font-size: 3rem;
+  padding: 20px 0;
+}
+
+#apaga-tudo, #remover-finalizados, #salvar-tarefas, #criar-tarefa, #remover-selecionado, #mover-cima, #mover-baixo {
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  flex-grow: 5;
+  font-weight: 700;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  opacity: 0.8;
+}
+
+#apaga-tudo:hover, #remover-finalizados:hover, #salvar-tarefas:hover, #criar-tarefa:hover, #remover-selecionado:hover, #mover-cima:hover, #mover-baixo:hover {
+  opacity: 1;
+}
+
+
+#criar-tarefa {
+  background-color:#00043A;
+}
+
+#remover-selecionado {
+  background-color: #EB3F33;
+  flex-basis: 10px;
+}
+
+#mover-cima, #mover-baixo {
+  background-color: #886F9B;
+  flex-basis: 10px;
+}
+
+#salvar-tarefas {
+  background-color: #279057;
+}
+
+#apaga-tudo {
+  background-color: #EB3F33;
+}
+
+#remover-finalizados {
+  background-color: #886F9B;
+}
+
+.container-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 60%;
+  height: 50px;
+  margin: 10px 40px;
+}
+
+.container-input {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: 60%;
+  height: 50px;
+  margin: auto 40px;
+}
+
+#texto-tarefa {
+  flex-basis: 400px;
+  font-size: 1rem;
+  flex-grow: 1;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+
+#lista-tarefas {
+  margin: auto 60px;
+  padding: 10px;
+  font-size: 1.4rem;
+  width: 60%;
+}
