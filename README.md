@@ -1,4 +1,4 @@
-#Projeto Lista de Tarefas
+# Projeto Lista de Tarefas
 
 Projeto realizado para o curso de Desenvolvimento Web pela Trybe, a escola que te ensina a programar, a aprender e a trabalhar. Para saber mais sobre a Trybe: https://www.betrybe.com/
 
