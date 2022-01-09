@@ -5,10 +5,10 @@ const taskList = document.getElementById('lista-tarefas');
 const eraseAll = document.getElementById('apaga-tudo');
 const eraseAllDone = document.getElementById('remover-finalizados');
 const saveTasks = document.getElementById('salvar-tarefas');
-const selectedTask = document.getElementById("remover-selecionado");
+const selectedTask = document.getElementById('remover-selecionado');
 
 const moveUp = document.getElementById('mover-cima');
-const moveDown = document.getElementById('mover-baixo')
+const moveDown = document.getElementById('mover-baixo');
 
 // mover o item selecionado para cima ou para baixo
 // verificar se possui a classe tasks-gray
@@ -45,7 +45,7 @@ function moveItemDown() {
 moveDown.addEventListener('click', moveItemDown);
 
 // salvar no localStorage
-/* Mentoria com o Alexandre Sumoyama, ele me ajudou a formular a lógica do requisito 12 - salvar o elemento HTML, as 'li's completas*/
+/* Mentoria com o Alexandre Sumoyama, ele me ajudou a formular a lógica do requisito 12 - salvar o elemento HTML, as 'li's completas */
 function saveAtLocalStorage() {
   localStorage.setItem('item-tasks', JSON.stringify(taskList.innerHTML));
 }
@@ -71,7 +71,7 @@ function initial() {
   } else {
     getLocalStorage();
   }
-} 
+}
 
 /** Source: link https://trybecourse.slack.com/archives/C02L83FCV4K/p1639313749377100?thread_ts=1639313080.376600&cid=C02L83FCV4K (Colocar o escutador de eventos do clique no item da lista dentro do botão adicionar (Fuction addItem) - Sugestão do Leo Araujo - Turma 19 - Tribo A) */
 // adicionar itens na lista
@@ -156,8 +156,8 @@ function enter(event) {
     itemList.addEventListener('dblclick', done);
   }
 }
-input.addEventListener('keydown', enter); 
+input.addEventListener('keydown', enter);
 
-window.onload = function() {
+window.onload = () => {
   initial();
-}
+};
